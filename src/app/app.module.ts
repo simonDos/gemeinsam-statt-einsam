@@ -110,13 +110,14 @@ import {
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { EventListComponent } from './components/event-list/event-list.component';
 import {DatePipe} from './pipes/date.pipe';
-import { PlanComponent } from './components/plan/plan.component'
+import { PlanComponent } from './components/plan/plan.component';
+import { AboutComponent } from './components/about/about.component'
 
 
 
 const appRoutes: Routes = [
   { path: '', component: DashboardComponent },
-  {path: 'about', component: DashboardComponent},
+  {path: 'about', component: AboutComponent},
   {path: 'imprint', component: DashboardComponent},
 ]
 
@@ -126,7 +127,8 @@ const appRoutes: Routes = [
     DashboardComponent,
     EventListComponent,
     DatePipe,
-    PlanComponent
+    PlanComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

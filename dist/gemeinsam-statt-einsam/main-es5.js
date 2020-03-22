@@ -158,7 +158,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["app-root"]],
       decls: 12,
       vars: 0,
-      consts: [[1, "nav-container"], [1, "logo-area"], ["mat-button", "", "routerLink", "/", 1, "logo-img"], ["src", "../assets/gse.jpg", "alt", "logo", 1, "logo"], [1, "headline"], ["mat-button", "", "routerLink", "/imprint", 2, "float", "right"], ["mat-button", "", "routerLink", "/about", 2, "float", "right"]],
+      consts: [[1, "nav-container"], [1, "logo-area"], ["mat-button", "", "routerLink", "/", 1, "logo-img"], ["src", "../assets/gse.jpg", "alt", "logo", 1, "logo"], ["mat-button", "", "routerLink", "/", 1, "headline"], ["mat-button", "", "routerLink", "/imprint", 2, "float", "right"], ["mat-button", "", "routerLink", "/about", 2, "float", "right"]],
       template: function AppComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nav");
@@ -175,7 +175,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "div", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "button", 4);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "gemeinsam statt einsam");
 
@@ -460,13 +460,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var _components_plan_plan_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(
     /*! ./components/plan/plan.component */
     "./src/app/components/plan/plan.component.ts");
+    /* harmony import */
+
+
+    var _components_about_about_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(
+    /*! ./components/about/about.component */
+    "./src/app/components/about/about.component.ts");
 
     var appRoutes = [{
       path: '',
       component: _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["DashboardComponent"]
     }, {
       path: 'about',
-      component: _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["DashboardComponent"]
+      component: _components_about_about_component__WEBPACK_IMPORTED_MODULE_37__["AboutComponent"]
     }, {
       path: 'imprint',
       component: _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["DashboardComponent"]
@@ -490,7 +496,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     (function () {
       (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, {
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["DashboardComponent"], _components_event_list_event_list_component__WEBPACK_IMPORTED_MODULE_34__["EventListComponent"], _pipes_date_pipe__WEBPACK_IMPORTED_MODULE_35__["DatePipe"], _components_plan_plan_component__WEBPACK_IMPORTED_MODULE_36__["PlanComponent"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["DashboardComponent"], _components_event_list_event_list_component__WEBPACK_IMPORTED_MODULE_34__["EventListComponent"], _pipes_date_pipe__WEBPACK_IMPORTED_MODULE_35__["DatePipe"], _components_plan_plan_component__WEBPACK_IMPORTED_MODULE_36__["PlanComponent"], _components_about_about_component__WEBPACK_IMPORTED_MODULE_37__["AboutComponent"]],
         imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["NoopAnimationsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClientModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_7__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_8__["MatButtonToggleModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_10__["MatCheckboxModule"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_15__["MatFormFieldModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_23__["MatSelectModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_18__["MatInputModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_12__["MatOptionModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_9__["MatCardModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_13__["MatDatepickerModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_12__["MatNativeDateModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_26__["MatSliderModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_32__["MatExpansionModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_31__["MatTooltipModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_21__["MatProgressSpinnerModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_20__["MatProgressBarModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_16__["MatGridListModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_19__["MatListModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_25__["MatSlideToggleModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_24__["MatSidenavModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_28__["MatStepperModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_14__["MatDialogModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_11__["MatChipsModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_29__["MatTableModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_17__["MatIconModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_27__["MatSnackBarModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_30__["MatTabsModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_22__["MatRadioModule"]]
       });
     })();
@@ -501,7 +507,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
-          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["DashboardComponent"], _components_event_list_event_list_component__WEBPACK_IMPORTED_MODULE_34__["EventListComponent"], _pipes_date_pipe__WEBPACK_IMPORTED_MODULE_35__["DatePipe"], _components_plan_plan_component__WEBPACK_IMPORTED_MODULE_36__["PlanComponent"]],
+          declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"], _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["DashboardComponent"], _components_event_list_event_list_component__WEBPACK_IMPORTED_MODULE_34__["EventListComponent"], _pipes_date_pipe__WEBPACK_IMPORTED_MODULE_35__["DatePipe"], _components_plan_plan_component__WEBPACK_IMPORTED_MODULE_36__["PlanComponent"], _components_about_about_component__WEBPACK_IMPORTED_MODULE_37__["AboutComponent"]],
           imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_2__["AppRoutingModule"], _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["NoopAnimationsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_5__["RouterModule"].forRoot(appRoutes), _angular_common_http__WEBPACK_IMPORTED_MODULE_6__["HttpClientModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_7__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_8__["MatButtonToggleModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_10__["MatCheckboxModule"], _angular_material_form_field__WEBPACK_IMPORTED_MODULE_15__["MatFormFieldModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_23__["MatSelectModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_18__["MatInputModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_12__["MatOptionModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_9__["MatCardModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_13__["MatDatepickerModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_12__["MatNativeDateModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_4__["BrowserAnimationsModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_26__["MatSliderModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_32__["MatExpansionModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_31__["MatTooltipModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_21__["MatProgressSpinnerModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_20__["MatProgressBarModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_16__["MatGridListModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_19__["MatListModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_25__["MatSlideToggleModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_24__["MatSidenavModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_28__["MatStepperModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_14__["MatDialogModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_11__["MatChipsModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_29__["MatTableModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_17__["MatIconModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_27__["MatSnackBarModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_30__["MatTabsModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_22__["MatRadioModule"]],
           providers: [],
           bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -543,6 +549,175 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       this.phone = phone;
       this.phonepin = phonepin;
     };
+    /***/
+
+  },
+
+  /***/
+  "./src/app/components/about/about.component.ts":
+  /*!*****************************************************!*\
+    !*** ./src/app/components/about/about.component.ts ***!
+    \*****************************************************/
+
+  /*! exports provided: AboutComponent */
+
+  /***/
+  function srcAppComponentsAboutAboutComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AboutComponent", function () {
+      return AboutComponent;
+    });
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_material_card__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/material/card */
+    "./node_modules/@angular/material/__ivy_ngcc__/fesm2015/card.js");
+
+    var AboutComponent =
+    /*#__PURE__*/
+    function () {
+      function AboutComponent() {
+        _classCallCheck(this, AboutComponent);
+      }
+
+      _createClass(AboutComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return AboutComponent;
+    }();
+
+    AboutComponent.ɵfac = function AboutComponent_Factory(t) {
+      return new (t || AboutComponent)();
+    };
+
+    AboutComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+      type: AboutComponent,
+      selectors: [["app-about"]],
+      decls: 28,
+      vars: 0,
+      consts: [[1, "container"], ["id", "gemeinsamstatteinsam"]],
+      template: function AboutComponent_Template(rf, ctx) {
+        if (rf & 1) {
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "mat-card");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "mat-card-title");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, " \xDCber uns ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "mat-card-content");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "h1", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "GemeinsamStattEinsam");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Was will Gemeinsam-Statt-Einsam.EU erreichen?\nMenschen f\xFChlen sich auch online und am Telefon echt an, aber Soziale Netzwerke k\xF6nnen das nicht nachahmen: Stattdessen klingelt, vibriert und blinkt nur st\xE4ndig irgendwas. Echtes Sozialleben braucht keine Tasten und Emojis, sondern eine Stimme, ein freundliches Wort und etwas Zeit zusammen. Vielleicht auch noch Video.");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "em");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, " Wie gut das tut, wei\xDF jeder. Ob's eine Innovation ist? Das soll jetzt die Jury bewerten: ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "Unsere Idee: Damit wir in der aktuellen Situation allen etwas Sozialleben erm\xF6glichen, auch unseren deutschsprachigen EU-Nachbarn, programmieren und gestalten wir eine Plattform unter Gemeinsam-Statt-Einsam.EU.");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "Auf Gemeinsam-Statt-Einsam.EU k\xF6nnen wir uns wieder verabreden. Egal ob der Laptop am Fr\xFChst\xFCckstisch steht, wir zwischendruch Kurse und Auff\xFChrungen besuchen oder einfach nur mal wieder am Telefon quatschen. Wir geben jeder Zeit in einen direkten Kontakt miteinander, ohne uns anzustecken.");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "Nat\xFCrlich wollen wir nicht, dass jeder:in jederzeit durch die virtuelle Haust\xFCr kommt. Wir sind es gewohnt, Sozialleben zu planen und das erm\xF6glicht unsere Plattform genauso wie die Auswahl der passenden Interessen. Die Aufnahme einer in Deutschland zugelassenen Know-Your-Customer-L\xF6sung, zur optionalen Verifikation der Kontakte per Ausweis, l\xE4sst sich f\xFCr wenige Euro pro Kontakt innerhalb von nur zwei Tagen einbauen.");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Wir bringen die Vorteile von Home Office und E-Learning ins Privatleben und reduzieren dabei Social-Media-Stress.");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "What it does\nUser Story 1: User m\xF6chten virtuelle Treffen in den Tagesablauf einplanen. User Story 2: User m\xF6chten aus verschiedenen Themenfeldern und Angeboten ausw\xE4hlen. User Story 3: User m\xF6chten selbst virtuelle Treffen anbieten k\xF6nnen. User Story 4: User m\xF6chten intuitiv bei der Bedienung geleitet werden. User Story 5: User m\xF6chten, Vorschl\xE4ge erhalten, wo sie teilnehmen k\xF6nnen. User Story 6: User m\xF6chten auch einfach per Telefon teilnehmen k\xF6nnen. User Story 7: User m\xF6chten neue Kontakte finden. User Story 8: User m\xF6chten sich Eventreihen abonnieren. User Story 9: User m\xF6chten keine annonymen Kontakte. User Story 10: User ben\xF6tigen Icebreaker f\xFCr den ersten Kontakt.");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "How I built it\nWir haben das Projekt w\xE4hrend und ausschlie\xDFlich f\xFCr #WirVsVirus gebaut. Alle unsere Teammitglieder nutzen die vielf\xE4ltigen Projekt- und Kommunikations-Werkzeuge jeden Tag f\xFCr die Arbeit. Sie geh\xF6ren l\xE4ngst auch zu unserem Privatleben.");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "Unser Wissen, wie man diese Werkzeuge einsetzt, um auch \xFCber r\xE4umliche Distanz hinweg Sozialekontakte aufrecht zu erhalten oder zu erweitern, flie\xDFt nun in Gemeinsam-Statt-Einsam.EU. So stellen wir sicher, dass das Nutzererlebnis intuitiv und niederschwellig f\xFCr alle gesellschaftlichen Gruppen ist.");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "p");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "Des Weiteren nutzen wir g\xE4ngige Frameworks und Agile Projekt-Techniken.");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        }
+      },
+      directives: [_angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCard"], _angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardTitle"], _angular_material_card__WEBPACK_IMPORTED_MODULE_1__["MatCardContent"]],
+      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvYWJvdXQvYWJvdXQuY29tcG9uZW50LnNjc3MifQ== */"]
+    });
+    /*@__PURE__*/
+
+    (function () {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](AboutComponent, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"],
+        args: [{
+          selector: 'app-about',
+          templateUrl: './about.component.html',
+          styleUrls: ['./about.component.scss']
+        }]
+      }], function () {
+        return [];
+      }, null);
+    })();
     /***/
 
   },
@@ -635,7 +810,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["app-dashboard"]],
       decls: 20,
       vars: 7,
-      consts: [[1, "container"], [2, "display", "flex"], [1, "events"], [3, "animationDuration"], ["label", "Essen"], [3, "events"], ["label", "Sport"], ["label", "Unterhaltung"], ["label", "Achtsamkeit"], ["label", "Andere"], [1, "plan"]],
+      consts: [[1, "container"], [2, "display", "flex"], [1, "events"], [3, "animationDuration"], ["label", "Treffen"], [3, "events"], ["label", "Sport"], ["label", "Unterhaltung"], ["label", "Achtsamkeit"], ["label", "Andere"], [1, "plan"]],
       template: function DashboardComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
