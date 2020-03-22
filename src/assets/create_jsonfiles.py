@@ -91,11 +91,11 @@ with open(event["name"].replace(" ","")+'.json', 'w') as outfile:
     json.dump(event, outfile)
 
 event["category"] = "Unterhaltung"
-event["name"] = " 'Heintje und Peter' schauen"
+event["name"] = " Heintje und Peter schauen"
 event["description"] = "Gemeinsam den Film 'Heintje und Peter' schauen"
 event["when"] = timestamp
 event["link"] = "-"
-event["video"] = "Netflix"
+event["video"] = "ARD Mediathek"
 event["phone"] = "+49 30 7454523"
 event["phonepin"] = "7454523"
 
@@ -103,7 +103,7 @@ with open(event["name"].replace(" ","")+'.json', 'w') as outfile:
     json.dump(event, outfile)
 
 event["category"] = "Unterhaltung"
-event["name"] = " 'Kevin allein Zuhaus' schauen"
+event["name"] = " Kevin allein Zuhaus schauen"
 event["description"] = "Gemeinsam den Film 'Kevin allein Zuhaus' schauen"
 event["when"] = timestamp
 event["link"] = "-"
@@ -115,7 +115,7 @@ with open(event["name"].replace(" ","")+'.json', 'w') as outfile:
     json.dump(event, outfile)
 
 event["category"] = "Unterhaltung"
-event["name"] = " ACDC Live Konzert aus der Royal Albert Hall hören mit Elise "
+event["name"] = "ACDC Live Konzert aus der Royal Albert Hall hören mit Elise "
 event["description"] = "Endlich mal wieder abrocken mit ACDC"
 event["when"] = timestamp
 event["link"] = "-"
@@ -131,12 +131,93 @@ event["name"] = "Pilates mit Annika"
 event["description"] = "Gemeinsam den Körper durch Pilates stärken"
 event["when"] = timestamp
 event["link"] = "-"
-event["video"] = "Facebook"
+event["video"] = "Zoom"
 event["phone"] = "+49 30 711233"
 event["phonepin"] = "711233"
 
 with open(event["name"].replace(" ","")+'.json', 'w') as outfile:
     json.dump(event, outfile)
     
-    
+event["category"] = "Sport"
+event["name"] = "Tai Chi mit Herbert"
+event["description"] = "Zur inneren Ruhe finden mit Tai Chi"
+event["when"] = timestamp
+event["link"] = "-"
+event["video"] = "Skype"
+event["phone"] = "+49 69 456233"
+event["phonepin"] = "456233"
 
+with open(event["name"].replace(" ","")+'.json', 'w') as outfile:
+    json.dump(event, outfile)
+
+event["category"] = "Sport"
+event["name"] = "Yoga mit Hannah"
+event["description"] = "Gemeinsames Yoga mit Hannah aus Mainz"
+event["when"] = timestamp
+event["link"] = "-"
+event["video"] = "Skype"
+event["phone"] = "+49 6131 734343"
+event["phonepin"] = "734343"
+
+with open(event["name"].replace(" ","")+'.json', 'w') as outfile:
+    json.dump(event, outfile)
+
+event["category"] = "Treffen"
+event["name"] = "Kuchen mit Bertram"
+event["description"] = "Lust auf ein Stück Kuchen? Gemeinsam mit Bertram treffen und sich über dies und das Unterhalten bei einem leckeren Stück Kuchen."
+event["when"] = timestamp
+event["link"] = "-"
+event["video"] = "Skype"
+event["phone"] = "+49 761 73434"
+event["phonepin"] = "73434"
+
+with open(event["name"].replace(" ","")+'.json', 'w') as outfile:
+    json.dump(event, outfile)
+
+event["category"] = "Treffen"
+event["name"] = "Pizza mit Gundula "
+event["description"] = "Pizzaabend mit Gundula."
+event["when"] = timestamp
+event["link"] = "-"
+event["video"] = "Telegram"
+event["phone"] = "+49 30 874523"
+event["phonepin"] = "874523"
+
+with open(event["name"].replace(" ","")+'.json', 'w') as outfile:
+    json.dump(event, outfile)
+    
+event["category"] = "Treffen"
+event["name"] = "Kaffee und Kuchen mit Gert"
+event["description"] = "lust auf ein nettes Gespräch bei Kaffe und Kuchen?"
+event["when"] = timestamp
+event["link"] = "-"
+event["video"] = "Discord"
+event["phone"] = "+49 30 874523"
+event["phonepin"] = "874523"
+
+with open(event["name"].replace(" ","")+'.json', 'w') as outfile:
+    json.dump(event, outfile)
+    
+event["category"] = "Treffen"
+event["name"] = "Weinabend mit Thees"
+event["description"] = "'Du bringst die Story - ich bring den Wein'"
+event["when"] = timestamp
+event["link"] = "-"
+event["video"] = "Zoom"
+event["phone"] = "+49 40 874523"
+event["phonepin"] = "874523"
+
+with open(event["name"].replace(" ","")+'.json', 'w') as outfile:
+    json.dump(event, outfile)
+    
+event["category"] = "Treffen"
+event["name"] = "Kneipenabend mit Yassin"
+event["description"] = "Feierabendbier mit Yassin aus Berlin."
+event["when"] = timestamp
+event["link"] = "-"
+event["video"] = "Zoom"
+event["phone"] = "+49 6150 31235"
+event["phonepin"] = "31235"
+
+with open(event["name"].replace(" ","")+'.json', 'w') as outfile:
+    json.dump(event, outfile)
