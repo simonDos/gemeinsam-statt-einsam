@@ -228,3 +228,7 @@ html {
 .mat-form-field.mat-focused .mat-form-field-ripple {
   background-color: $main_color;
 }
+
+.mat-tab-body-wrapper {
+  max-height: calc(100vh - 250px) !important
+}

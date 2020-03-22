@@ -7,76 +7,228 @@ import { EventsEntry } from "src/app/classes/EventsEntry";
   styleUrls: ["./dashboard.component.scss"]
 })
 export class DashboardComponent implements OnInit {
-  essen_events: EventsEntry[] = []
-
-  my_events: EventsEntry[] = []
+  treffen: EventsEntry[] = []
+  sport: EventsEntry[] = []
+  unterhaltung: EventsEntry[] = []
+  achtsamkeit: EventsEntry[] = []
+  andere: EventsEntry[] = []
 
   constructor() {
 
-    this.essen_events.push(
-      new EventsEntry(
-        "Frühstück",
-        "Wir frühstücken zusammen! :)",
-        1584871200,
-        "chefkoch.de",
-        "jitsi.org",
-        "+49 1234567890",
-        "789 345"
-      )
-    );
+    this.treffen = this.events.Treffen
+    this.sport = this.events.Sport
+    this.unterhaltung = this.events.Unterhaltung
+    this.achtsamkeit = this.events.Achtsamkeit
+    this.andere = this.events.Anderes
 
-    this.essen_events.push(
-      new EventsEntry(
-        "Frühstück",
-        "Wir frühstücken zusammen! :)",
-        1584871200,
-        "chefkoch.de",
-        "jitsi.org",
-        "+49 1234567890",
-        "789 345"
-      )
-    );
-
-  
-
-    
-
-    this.my_events.push(
-      new EventsEntry(
-        "Frühstück",
-        "Wir frühstücken zusammen! :)",
-        1584871200,
-        "chefkoch.de",
-        "jitsi.org",
-        "+49 1234567890",
-        "789 345"
-      )
-    );
-
-    this.my_events.push(
-      new EventsEntry(
-        "Frühstück",
-        "Wir frühstücken zusammen! :)",
-        1584871200,
-        "chefkoch.de",
-        "jitsi.org",
-        "+49 1234567890",
-        "789 345"
-      )
-    );
-
-    this.my_events.push(
-      new EventsEntry(
-        "Frühstück",
-        "Wir frühstücken zusammen! :)",
-        1584871200,
-        "chefkoch.de",
-        "jitsi.org",
-        "+49 1234567890",
-        "789 345"
-      )
-    );
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
+  
+
+  events = {
+    "Anderes": [
+      {
+        "category": "Anderes",
+        "name": "Doppelkopf mit Bertram",
+        "description": "Gefelgte Runde Doppelkopf mit gleichgesinnten.",
+        "when": 1584867600,
+        "link": "https://www.doppelkopf-palast.de/",
+        "video": "Skype",
+        "phone": "+49 30 1563462",
+        "phonepin": "1563462"
+      },
+      {
+        "category": "Anderes",
+        "name": "Skat mit Ulli",
+        "description": "Skatabend mit Ulli",
+        "when": 1584903600,
+        "link": "https://www.skat-spielen.de/",
+        "video": "Skype",
+        "phone": "+49 40 1234340",
+        "phonepin": "1234340"
+      },
+      {
+        "category": "Anderes",
+        "name": "Unreal Tournament mit Johanns",
+        "description": "FPS max und los geht's",
+        "when": 1584898200,
+        "link": "https://www.twitch.tv/directory/game/Unreal%20Tournament",
+        "video": "Twitch",
+        "phone": "+49 69 18880",
+        "phonepin": "18880"
+      }
+    ],
+    "Achtsamkeit": [
+      {
+        "category": "Achtsamkeit",
+        "name": "Meditation mit Geraldine",
+        "description": "Zusammen meditieren um Gemeinsam zu sein",
+        "when": 1584871200,
+        "link": "https://vedanta-yoga.de/online-meditations-kurs/",
+        "video": "Discord",
+        "phone": "+49 69 23232452",
+        "phonepin": "23232452"
+      },
+      {
+        "category": "Achtsamkeit",
+        "name": "Progressive Muskelrelaxanz mit Maria",
+        "description": "Gemeinsam daheim entspannen mit Maria",
+        "when": 1584898200,
+        "link": "https://www.tk.de/techniker/magazin/life-balance/aktiv-entspannen/progressive-muskelentspannung-zum-download-2021142",
+        "video": "Zoom",
+        "phone": "+49 30 248453452",
+        "phonepin": "248453452"
+      },
+      {
+        "category": "Achtsamkeit",
+        "name": "Qui Gong mit Albert",
+        "description": "Qui Gong mit Albert. Auch f\u00fcr Einsteiger",
+        "when": 1584900000,
+        "link": "https://qigongonline.de/",
+        "video": "Zoom",
+        "phone": "+49 30 248453452",
+        "phonepin": "248453452"
+      }
+    ],
+    "Unterhaltung": [
+      {
+        "category": "Unterhaltung",
+        "name": "ACDC Live Konzert aus der Royal Albert Hall h\u00f6ren mit Elise ",
+        "description": "Endlich mal wieder abrocken mit ACDC",
+        "when": 1584904500,
+        "link": "https://www.facebook.com/events/1292688854258527/",
+        "video": "Facebook",
+        "phone": "+49 30 711233",
+        "phonepin": "711233"
+      },
+      {
+        "category": "Unterhaltung",
+        "name": "ESL ProLeague Season 11",
+        "description": "Astralis vs Team Spirit - kann Astralis nochmal zur\u00fcckschlagen? ",
+        "when": 1584896400,
+        "link": "https://www.twitch.tv/esl_csgo",
+        "video": "Twitch",
+        "phone": "+49 89 5712335",
+        "phonepin": "5712335"
+      },
+      {
+        "category": "Unterhaltung",
+        "name": "Heintje und Peter schauen",
+        "description": "Gemeinsam den Film 'Heintje und Peter' schauen",
+        "when": 1584889200,
+        "link": "https://www.zdf.de/kinder/heidi",
+        "video": "ZDF Mediathek",
+        "phone": "+49 30 7454523",
+        "phonepin": "7454523"
+      },
+      {
+        "category": "Unterhaltung",
+        "name": "Kevin allein Zuhaus schauen",
+        "description": "Gemeinsam den Film 'Kevin allein Zuhaus' schauen",
+        "when": 1584901800,
+        "link": "https://www.netflix.com/de/title/596983",
+        "video": "Netflix",
+        "phone": "+49 30 7454523",
+        "phonepin": "7454523"
+      },
+      {
+        "category": "Unterhaltung",
+        "name": "Kneipenabend mit Yassin",
+        "description": "Feierabendbier mit Yassin aus Berlin.",
+        "when": 1584909000,
+        "link": "http://www.kessel-darmstadt.de/",
+        "video": "Zoom",
+        "phone": "+49 6150 31235",
+        "phonepin": "31235"
+      }
+    ],
+    "Sport": [
+      {
+        "category": "Sport",
+        "name": "Pilates mit Annika",
+        "description": "Gemeinsam den K\u00f6rper durch Pilates st\u00e4rken",
+        "when": 1584860400,
+        "link": "https://www.pilatesclub.de/",
+        "video": "Zoom",
+        "phone": "+49 30 711233",
+        "phonepin": "711233"
+      },
+      {
+        "category": "Sport",
+        "name": "Tai Chi mit Herbert",
+        "description": "Zur inneren Ruhe finden mit Tai Chi",
+        "when": 1584862200,
+        "link": "http://www.tai-chi-zentrum.de/e-clips-tai-chi.htm",
+        "video": "Skype",
+        "phone": "+49 69 456233",
+        "phonepin": "456233"
+      },
+      {
+        "category": "Sport",
+        "name": "Yoga mit Hannah",
+        "description": "Gemeinsames Yoga mit Hannah aus Mainz",
+        "when": 1584856800,
+        "link": "https://www.lu-yoga.de/stundenplan/",
+        "video": "Skype",
+        "phone": "+49 6131 734343",
+        "phonepin": "734343"
+      }
+    ],
+    "Treffen": [
+      {
+        "category": "Treffen",
+        "name": "Kaffee und Kuchen mit Gert",
+        "description": "lust auf ein nettes Gespr\u00e4ch bei Kaffe und Kuchen?",
+        "when": 1584896400,
+        "link": "https://www.ditsch.de/de/",
+        "video": "Discord",
+        "phone": "+49 30 874523",
+        "phonepin": "874523"
+      },
+      {
+        "category": "Treffen",
+        "name": "Weinabend mit Thees",
+        "description": "'Du bringst die Story - ich bring den Wein'",
+        "when": 1584905400,
+        "link": "https://www.keinweindenfaschisten.de/#Home",
+        "video": "Zoom",
+        "phone": "+49 40 874523",
+        "phonepin": "874523"
+      },
+      {
+        "category": "Treffen",
+        "name": "Kuchen mit Bertram",
+        "description": "Lust auf ein St\u00fcck Kuchen? Gemeinsam mit Bertram treffen und sich \u00fcber dies und das Unterhalten bei einem leckeren St\u00fcck Kuchen.",
+        "when": 1584882000,
+        "link": "https://www.deinetorte.de/",
+        "video": "Skype",
+        "phone": "+49 761 73434",
+        "phonepin": "73434"
+      },
+      {
+        "category": "Treffen",
+        "name": "Pizza mit Gundula ",
+        "description": "Pizzaabend mit Gundula.",
+        "when": 1584896400,
+        "link": "https://www.lieferando.de/",
+        "video": "Telegram",
+        "phone": "+49 30 874523",
+        "phonepin": "874523"
+      },
+      {
+        "category": "Treffen",
+        "name": "Tatort mit Jochen",
+        "description": "Niemals ohne mich \n Eine Mitarbeiterin des Jugendamtes wird erschlagen aufgefunden, nicht weit entfernt von ihrer Wohnung. Bei ihren Ermittlungen sto\u00dfen die Hauptkommissare Ballauf und Schenk auf getrennte Elternpaare, die gegeneinander k\u00e4mpfen.",
+        "when": 1584905400,
+        "link": "https://www.ardmediathek.de/ard/shows/Y3JpZDovL2Rhc2Vyc3RlLmRlL3RhdG9ydA/tatort",
+        "video": "Discord",
+        "phone": "+49 6150 31235",
+        "phonepin": "31235"
+      }
+    ]
+  }
+  
 }
+
+

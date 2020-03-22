@@ -8,19 +8,19 @@
 
         <mat-tab-group [animationDuration]="0">
           <mat-tab label="Treffen">
-            <app-event-list [events]="essen_events"></app-event-list>
+            <app-event-list [events]="treffen"></app-event-list>
           </mat-tab>
           <mat-tab label="Sport">
-            <app-event-list [events]="essen_events"></app-event-list>
+            <app-event-list [events]="sport"></app-event-list>
           </mat-tab>
           <mat-tab label="Unterhaltung">
-            <app-event-list [events]="essen_events"></app-event-list>
+            <app-event-list [events]="unterhaltung"></app-event-list>
           </mat-tab>
           <mat-tab label="Achtsamkeit">
-            <app-event-list [events]="essen_events"></app-event-list>
+            <app-event-list [events]="achtsamkeit"></app-event-list>
           </mat-tab>
           <mat-tab label="Andere">
-            <app-event-list [events]="essen_events"></app-event-list>
+            <app-event-list [events]="andere"></app-event-list>
           </mat-tab>
         </mat-tab-group>
       </mat-card>
@@ -28,7 +28,7 @@
 
     <div class="plan">
       <mat-card>
-        <app-plan [events]="my_events"></app-plan>
+        <app-plan [events]="andere"></app-plan>
       </mat-card>
     </div>
   </div>

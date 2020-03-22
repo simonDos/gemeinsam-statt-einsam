@@ -1,13 +1,18 @@
 mat-card {
-    height: calc(100vh - 180px);
+  height: calc(100vh - 180px);
+
+  mat-tab {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 }
 
 .events {
-    width: 70vw;
-    height: 100%;
+  width: 70vw;
+  height: 100%;
 }
 
 .plan {
-    width: 30vw;
-    height: 100%;
+  width: 30vw;
+  height: 100%;
 }
