@@ -15,11 +15,12 @@ today = datetime.date.today()
 first = today.replace(day=6)
 lastMonth = first - datetime.timedelta(days=6) 
 timestamp = time.mktime(lastMonth.timetuple())
-even_name=["Yoga","Meditieren","Frühstück","30-Min Trimm dich"]
+event_category=["Treffen","Sport","Unterhaltung","Achtsamkeit","Anderes"]
+event_name=["Yoga","Meditieren","Frühstück","30-Min Trimm dich"]
 
 event_video=["skype","zoom","whatspp","n/a","discord","telegram"]
 
-event["category"] = "category"
+event["category"] = event_category[0]
 event["name"] = "test"
 event["description"] = "hier ist beschreibung"
 event["when"] = timestamp
