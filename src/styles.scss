@@ -4,7 +4,8 @@
 
 /* global color scheme */
 
-$main_color: #426605;
+$main_color: #6ecf1c;
+$secondary_color: #44670b;
 $accent_color: #d8262a;
 
 $gray: #C6C6C6;
@@ -28,20 +29,21 @@ html {
   }
 
   body {
-    background: #72d025;
+    background: #ffffff;
     margin: 0;
     height: 100vh;
   }
 
   .container {
     margin: auto;
+    background-color: $main_color;
     padding: 100px 0 20px;
     min-height: calc(100vh - 180px);
   }
 
   a {
     cursor: pointer;
-    color: $main_color;
+    color: $secondary_color;
     text-decoration: none;
   }
 
@@ -89,7 +91,7 @@ html {
 
   .mat-raised-button {
     color: #fff;
-    background-color: $main_color;
+    background-color: $secondary_color;
   }
 
   .btn-main-color {
