@@ -109,7 +109,8 @@ import {
 } from '@angular/material/expansion';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { EventListComponent } from './components/event-list/event-list.component';
-import {DatePipe} from './pipes/date.pipe'
+import {DatePipe} from './pipes/date.pipe';
+import { PlanComponent } from './components/plan/plan.component'
 
 
 
@@ -122,7 +123,8 @@ const appRoutes: Routes = [
     AppComponent,
     DashboardComponent,
     EventListComponent,
-    DatePipe
+    DatePipe,
+    PlanComponent
   ],
   imports: [
     BrowserModule,

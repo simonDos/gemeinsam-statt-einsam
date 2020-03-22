@@ -13,12 +13,10 @@ export class EventListComponent implements OnInit {
 
   @Input() events: EventsEntry[]
 
-  _events: any
-
   displayedColumns: string[] = ['event', 'when', 'how']
 
   constructor() { 
-    this._events = new MatTableDataSource(this.events)
+    
   }
 
   ngOnInit(): void {

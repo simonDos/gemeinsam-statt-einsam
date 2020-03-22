@@ -1,0 +1,13 @@
+<mat-card-title>
+  Mein Plan
+</mat-card-title>
+
+<mat-list *ngFor="let e of events">
+  <div mat-subheader>{{ e.when | datepipe }}</div>
+  <mat-list-item>
+    <div mat-line>{{ e.name }}</div>
+    <div mat-line><a (click)=goTo(e.link)>{{ e.link }}</a></div>
+    <div mat-line><a (click)=goTo(e.video)>{{ e.video }}</a></div>
+  </mat-list-item>
+  <hr>
+</mat-list>
