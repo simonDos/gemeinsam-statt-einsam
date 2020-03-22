@@ -1,0 +1,48 @@
+@import "../styles";
+
+nav {
+  top: 0;
+  padding: 2rem 0 1rem;
+  margin: 0;
+  background-color: $white;
+  color: $font;
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+  .nav-container {
+    display: block;
+    margin: auto;
+    padding: 0 2rem;
+  }
+
+  div {
+    display: inline;
+    padding: 0 1rem;
+  }
+
+  hr {
+    width: 2px;
+    size: auto;
+    display: inline;
+    border-color: $main_color;
+    margin-right: 10px;
+  }
+  .logo-area {
+    padding: 0;
+    .logo-img {
+      display: inline-block;
+      float: left;
+      padding-right: 0;
+      padding-left: 0;
+      img {
+        max-height: 40px;
+        object-fit: contain;
+      }
+    }
+    .logo-text {
+      padding: 0;
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+<table
+  mat-table
+  matSort
+  [dataSource]="events"
+  matSortActive="blockNumber"
+  matSortDirection="desc"
+  matSortDisableClear
+>
+  <ng-container matColumnDef="when">
+    <th *matHeaderCellDef>Wann?</th>
+    <td mat-cell *matCellDef="let e">
+      {{ e.when | datepipe}}
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="event">
+    <th mat-sort-header="event" *matHeaderCellDef>Was?</th>
+    <td mat-cell *matCellDef="let e">
+      <mat-card-title>
+        {{ e.name }}
+      </mat-card-title>
+      <hr />
+      <mat-card-content>
+        <p>
+          <small
+            ><b>Beschreibung</b> <br />
+            {{ e.description }}</small>
+        </p>
+      </mat-card-content>
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="how">
+    <th *matHeaderCellDef>Wie?</th>
+    <td mat-cell *matCellDef="let e">
+      <p>
+        <small
+          ><b>Link</b> <br />
+          {{ e.link }}</small
+        >
+        <br />
+        <small
+          ><b>Videokonferenz</b> <br />
+          {{ e.video }}</small
+        >
+        <br />
+        <small
+          ><b>Telefon</b> <br />
+          {{ e.phone }}</small
+        ><br /><small>{{ e.phonepin }}</small>
+      </p>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>

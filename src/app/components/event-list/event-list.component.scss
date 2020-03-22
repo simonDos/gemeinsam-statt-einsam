@@ -1,0 +1,55 @@
+@import "../../../styles";
+
+div {
+  display: flex;
+  mat-form-field {
+    width: calc(100% - 400px);
+  }
+
+  mat-paginator {
+    width: 400px;
+  }
+}
+
+
+mat-list-item {
+  height: auto !important;
+  margin: 15px 0
+}
+
+.mat-card-header-text {
+  margin: 0 !important
+}
+
+table {
+  td {
+    padding: 12px 0 12px 10px
+  }
+  th {
+    padding: 0 10px;
+    text-align: left;
+  }
+  .blockNumber{
+    text-align: center;
+    line-height: 15px;
+    font-size: 90%;
+  }
+  .blockDate{
+    text-align: center;
+    line-height: 5px;
+  }
+}
+
+.loader {
+  width: 100%;
+  text-align: center;
+
+  mat-spinner {
+    margin: auto;
+  }
+}
+
+hr {
+  margin-right: 60%;
+  border-color: $main_color;
+}

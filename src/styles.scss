@@ -1,1 +1,225 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+/* global color scheme */
+
+$main_color: #82204A;
+
+$gray: #C6C6C6;
+$font: #3C3C3C;
+$black: #1D1D1B;
+$white: #fff;
+
+/* other colors*/
+$yellow: rgba(240, 200, 8, 1);
+$red: rgba(221, 28, 26, 1);
+$green: #60b600;
+
+
+html {
+  //font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
+
+  nav {
+    position: fixed !important;
+    width: 100%;
+  }
+
+  body {
+    background: $main_color;
+    margin: 0;
+    height: 100vh;
+  }
+
+  .container {
+    margin: auto;
+    padding: 100px 0 20px;
+    min-height: calc(100vh - 180px);
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  .mat-raised-button, .mat-button {
+    font-family: 'Open Sans', sans-serif !important;
+  }
+
+  .mat-card {
+    padding: 2rem;
+    border-radius: 0;
+    color: $font;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.75) !important;
+    -moz-box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.75) !important;
+    box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.75) !important;
+  }
+
+  mat-card-title mat-chip-list {
+    float: right;
+
+    .mat-chip.mat-standard-chip::after {
+      background: none;
+    }
+  }
+
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .mat-dialog-actions {
+    text-align: right;
+    float: right;
+  }
+
+  .mat-dialog-content {
+    //max-height: 100vh !important;
+    overflow: hidden !important;
+    max-height: none;
+  }
+
+  .mat-raised-button {
+    color: #fff;
+    background-color: $main_color;
+  }
+
+  .btn-main-color {
+    color: $white !important;
+    background-color: $main_color !important;
+  }
+
+  button {
+    min-height: 35px;
+  }
+
+  circle {
+    stroke: $main_color !important;
+  }
+
+  .mat-input-element {
+    caret-color: $main_color;
+  }
+
+  .mat-button.mat-accent, .mat-icon-button.mat-accent,
+  .mat-stroked-button.mat-accent {
+    color: $main_color !important;
+  }
+
+  label {
+    //color: $blue !important;
+  }
+
+  .mat-form-field.mat-focused .mat-form-field-label {
+    color: $main_color;
+  }
+
+  .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-edit {
+    background-color: $main_color;
+  }
+
+  .mat-step-header .mat-step-icon-state-done {
+    background-color: $green;
+  }
+
+  .mat-input-element:disabled {
+    color: #000;
+  }
+
+  .mat-progress-bar-fill::after {
+    background-color: $main_color;
+  }
+
+  .progress .mat-step-header {
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+/* FORM */
+.mat-radio-button.mat-accent .mat-radio-inner-circle, .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element:not(.mat-radio-persistent-ripple), .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-persistent-ripple, .mat-radio-button.mat-accent:active .mat-radio-persistent-ripple {
+  background-color: $main_color;
+}
+
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+  border-color: $main_color;
+}
+
+.padding-w-1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: $main_color;
+}
+
+.mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
+  color: rgba(0, 0, 0, .12);
+}
+
+#splashscreen-logo {
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 2s ease-in;
+}
+
+.event_values {
+  div.mat-chip-list-wrapper {
+    flex-direction: column;
+    align-items: inherit;
+  }
+}
+
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-accent {
+  background-color: $green !important;
+  color: white
+}
+
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
+  background-color: $main_color !important;
+  color: white
+}
+
+.mat-select-panel {
+  max-height: fit-content !important;
+}
+
+.mat-step-header{
+  border-radius: 40px;
+
+  .mat-step-header-ripple {
+    border-radius: 40px;
+  }
+}
+
+.mat-simple-snackbar-action {
+  color: $main_color
+}
+
+.mat-snack-bar-success {
+  color: $white !important;
+  background-color: $green !important;
+}
+
+.mat-snack-bar-error {
+  color: $white !important;
+  background-color: $red !important;
+}
+
+.mat-snack-bar-container {
+  max-width: 100% !important;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: $main_color;
+}
+
+.mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: $main_color;
+}

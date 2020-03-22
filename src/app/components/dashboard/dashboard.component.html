@@ -1,0 +1,31 @@
+<div class="container">
+  <div style="display: flex;">
+    <div class="events">
+      <mat-card>
+        <mat-card-title>
+          Plane deinen Tag!
+        </mat-card-title>
+
+        <mat-tab-group [animationDuration]="0">
+          <mat-tab label="Essen">
+              <app-event-list [events]=essen_events>
+
+              </app-event-list>
+          </mat-tab>
+          <mat-tab label="Sport"></mat-tab>
+          <mat-tab label="Spieln"></mat-tab>
+          <mat-tab label="Musik"></mat-tab>
+          <mat-tab label="Andere"></mat-tab>
+        </mat-tab-group>
+      </mat-card>
+    </div>
+
+    <div class="plan">
+      <mat-card>
+        <mat-card-title>
+          Mein Plan
+        </mat-card-title>
+      </mat-card>
+    </div>
+  </div>
+</div>
