@@ -115,7 +115,9 @@ import { PlanComponent } from './components/plan/plan.component'
 
 
 const appRoutes: Routes = [
-  {path: '', component: DashboardComponent},
+  { path: '', component: DashboardComponent },
+  {path: 'about', component: DashboardComponent},
+  {path: 'imprint', component: DashboardComponent},
 ]
 
 @NgModule({

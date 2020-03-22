@@ -156,9 +156,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     AppComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: AppComponent,
       selectors: [["app-root"]],
-      decls: 9,
+      decls: 13,
       vars: 0,
-      consts: [[1, "nav-container"], [1, "logo-area"], ["mat-button", "", "routerLink", "/", 1, "logo-img"], ["src", "", "alt", "logo", 1, "logo"], [2, "white-space", "nowrap"]],
+      consts: [[1, "nav-container"], [1, "logo-area"], ["mat-button", "", "routerLink", "/", 1, "logo-img"], ["src", "", "alt", "logo", 1, "logo"], [2, "white-space", "nowrap"], ["mat-button", "", "routerLink", "/imprint", 2, "float", "right"], ["mat-button", "", "routerLink", "/about", 2, "float", "right"]],
       template: function AppComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "nav");
@@ -183,11 +183,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "button", 5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, " Impressum ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "button", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, " Mehr Infos ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](8, "router-outlet");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](12, "router-outlet");
         }
       },
       directives: [_angular_material_button__WEBPACK_IMPORTED_MODULE_1__["MatButton"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLink"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterOutlet"]],
@@ -453,6 +465,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
     var appRoutes = [{
       path: '',
+      component: _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["DashboardComponent"]
+    }, {
+      path: 'about',
+      component: _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["DashboardComponent"]
+    }, {
+      path: 'imprint',
       component: _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_33__["DashboardComponent"]
     }];
 
