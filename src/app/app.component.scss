@@ -21,13 +21,11 @@ nav {
     padding: 0 1rem;
   }
 
-  hr {
-    width: 2px;
-    size: auto;
-    display: inline;
-    border-color: $main_color;
-    margin-right: 10px;
+  .headline {
+    white-space: nowrap;
+    font-size: x-large;
   }
+  
   .logo-area {
     padding: 0;
     .logo-img {

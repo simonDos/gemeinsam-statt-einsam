@@ -4,7 +4,8 @@
 
 /* global color scheme */
 
-$main_color: #82204A;
+$main_color: #426605;
+$accent_color: #d8262a;
 
 $gray: #C6C6C6;
 $font: #3C3C3C;
@@ -27,7 +28,7 @@ html {
   }
 
   body {
-    background: $main_color;
+    background: #72d025;
     margin: 0;
     height: 100vh;
   }
@@ -122,7 +123,7 @@ html {
   }
 
   .mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-edit {
-    background-color: $main_color;
+    background-color: $accent_color;
   }
 
   .mat-step-header .mat-step-icon-state-done {
@@ -219,7 +220,7 @@ html {
 }
 
 .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
-  background-color: $main_color;
+  background-color: $accent_color;
 }
 
 .mat-form-field.mat-focused .mat-form-field-ripple {
